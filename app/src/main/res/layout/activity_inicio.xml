@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView android:text="@string/h1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <!-- nombre -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/txtNombre"
+        android:text="@string/txtNombre"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/formNombre"/>
+
+    <!-- apellidos -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/txtApellido"
+        android:text="@string/txtApellido"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/formApellido"/>
+
+<!-- sex0 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tituloSexo"
+        android:text="@string/tituloSexo" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/fomrSexo01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fomrSexo01"
+          />
+        <RadioButton android:id="@+id/fomrSexo02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fomrSexo02"
+            />
+
+    </RadioGroup>
+
+
+    <!-- estudios, trabajo -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tituloEstTra"
+        android:text="@string/tituloEstTra" />
+
+    <CheckBox android:id="@+id/checkEstudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkEstudio" />
+
+
+    <CheckBox android:id="@+id/checkTrabajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkTrabajo" />
+
+
+    <!-- peso -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tituloPeso"
+        android:text="@string/tituloPeso" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/peso"
+        android:layout_gravity="center_horizontal" />
+
+
+
+    <!-- condiciones -->
+
+
+    <CheckBox android:id="@+id/checkTrabajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtCondiciones" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtButtonEnviar"
+        android:onClick="txtButtonEnviar" />
+
+
+
+</LinearLayout>
+
