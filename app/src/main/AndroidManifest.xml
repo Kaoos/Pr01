@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".getdatos"
+            android:label="@string/title_activity_getdatos"
+            android:parentActivityName=".inicio" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ruben.pr01.inicio" />
+        </activity>
     </application>
 
 </manifest>

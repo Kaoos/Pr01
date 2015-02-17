@@ -9,10 +9,6 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <TextView android:text="@string/h1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView" />
 
     <!-- nombre -->
     <TextView
@@ -131,7 +127,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txtButtonEnviar"
-        android:onClick="txtButtonEnviar" />
+        android:onClick="SendValues" />
 
 
 

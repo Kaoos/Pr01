@@ -1,28 +1,24 @@
 package com.example.ruben.pr01;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.EditText;
 
 
-public class inicio extends ActionBarActivity {
-
+public class getdatos extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inicio);
+        setContentView(R.layout.activity_getdatos);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_inicio, menu);
+        getMenuInflater().inflate(R.menu.menu_getdatos, menu);
         return true;
     }
 
@@ -40,18 +36,4 @@ public class inicio extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-//iniciamos la funcion del boton
-
-    public void SendValues (View myText){
-
-
-        Intent newView = new Intent(this, getdatos.class); //preparamos la view que queremos lanzar
-
-        startActivity(newView); //abrimos la nueva view, mirar mainactivity2.java funcion onCreate
-
-    }
-
-
-
 }

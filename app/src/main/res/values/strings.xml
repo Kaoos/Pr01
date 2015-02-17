@@ -1,31 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Pr01</string>
-    <string name="h1">Formulário</string>
+    <string name="app_name">Formulário</string>
     <string name="action_settings">Settings</string>
-
     <string name="txtNombre">Nombre</string>
     <string name="txtApellido">Apellido</string>
-
     <string name="tituloSexo">Soy...</string>
     <string name="fomrSexo01">Hombre</string>
     <string name="fomrSexo02">Mujer</string>
-
-
     <string name="tituloCumple">Naci el ...</string>
     <string name="hintCumple">dd/mm/aaaa</string>
-
     <string name="tituloEstTra">Actualmente estoy...</string>
     <string name="checkEstudio">Estudiando</string>
     <string name="checkTrabajo">Tabajando</string>
-
     <string name="tituloPeso">Peso</string>
-
     <string name="txtButtonEnviar">Enviar</string>
-
     <string name="txtCondiciones">He leido y acepto las condiciones</string>
-
-
+    <string name="title_activity_getdatos">getdatos</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
