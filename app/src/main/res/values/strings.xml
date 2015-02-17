@@ -13,8 +13,10 @@
     <string name="fomrSexo02">Mujer</string>
 
 
-    <string name="tituloEstTra">Actualmente estoy...</string>
+    <string name="tituloCumple">Naci el ...</string>
+    <string name="hintCumple">dd/mm/aaaa</string>
 
+    <string name="tituloEstTra">Actualmente estoy...</string>
     <string name="checkEstudio">Estudiando</string>
     <string name="checkTrabajo">Tabajando</string>
 
