@@ -70,7 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tituloCumple"
-        android:text="@string/tituloCumple"
+        android:text="@string/tituloCumple"/>
 
 
 
@@ -78,7 +78,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="date"
-        android:hint="@string/hintCumple"/>
+        android:hint="@string/hintCumple"
         android:ems="10"
         android:id="@+id/Cumple" />
 
