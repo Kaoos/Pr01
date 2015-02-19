@@ -13,7 +13,7 @@ public class inicio extends ActionBarActivity {
 
     final public static String DATOS_nombre = "com.example.ruben.pr01.DicNombre"; // es bueno definir el nombre de la variable para poder diferenciara entre otras app
     //DEFINIMOS la key para la entrada en mi diccionario, con el final hacemos que el valor no se pueda modificar en ningun sitio y es publica para todos
-    final public static String DATOS = "com.example.ruben.pr01.DicNombre";
+    final public static String DATOS_apellido = "com.example.ruben.pr01.DicApellido";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,16 +50,19 @@ public class inicio extends ActionBarActivity {
 
         Intent newView = new Intent(this, getdatos.class); //preparamos la view que queremos lanzar
 
-        //recivimos los datos de los diferentes EditText
+        //recivimos los datos
+
+        //nombre
 
         EditText NombreUsiario = (EditText) findViewById(R.id.formNombre);
         String myName = NombreUsiario.getText().toString(); // Nom tenemos lo que ha introducido el usuario en el campo txtNombre
-        newView.putExtra(DATOS,myName ); //añadimos el valor de la variable al diccionario
+        newView.putExtra(DATOS_nombre,myName ); //añadimos el valor de la variable al diccionario
 
+        //apellido
 
         EditText ApellidoUsiario = (EditText) findViewById(R.id.formApellido);
         String myApe = ApellidoUsiario.getText().toString(); // Ape tenemos lo que ha introducido el usuario en el campo txtApellido
-        newView.putExtra(DATOS,myApe ); ////añadimos el valor de la variable al diccionario
+        newView.putExtra(DATOS_apellido,myApe ); ////añadimos el valor de la variable al diccionario
 
 
 

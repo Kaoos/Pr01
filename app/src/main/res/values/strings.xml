@@ -3,6 +3,9 @@
 
     <string name="app_name">Formulário</string>
     <string name="action_settings">Settings</string>
+
+    <!-- Send -->
+
     <string name="txtNombre">Nombre</string>
     <string name="txtApellido">Apellido</string>
     <string name="tituloSexo">Soy...</string>
@@ -18,5 +21,10 @@
     <string name="txtCondiciones">He leido y acepto las condiciones</string>
     <string name="title_activity_getdatos">getdatos</string>
     <string name="hello_world">Hello world!</string>
+
+
+    <!-- Get -->
+    <string name="txtGetNombre">Te llamas</string>
+    <string name="txtGetApellido">tus apellidos son</string>
 
 </resources>

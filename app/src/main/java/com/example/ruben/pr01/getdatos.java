@@ -13,17 +13,27 @@ public class getdatos extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-        Intent Diccionario = getIntent();//recuperarmos el diccionario
-
-        String nom = Diccionario.getStringExtra(inicio.DATOS); //
-
         setContentView(R.layout.activity_getdatos);// creamos la view
+
+
+        // ----- Nombre -----
+        Intent DiccionarioNombre = getIntent();//recuperarmos el diccionario Nombre
+
+        String nom = DiccionarioNombre.getStringExtra(inicio.DATOS_nombre); // Assignamos el valor del nombre
 
         TextView elNombre = (TextView) findViewById(R.id.getNombre); // buscamos el view donde introducioremos los datos
 
         elNombre.setText(nom); //  asignamos el valor al view
+
+
+        // ----- Apellido -----
+        Intent DiccionarioApellido = getIntent();//recuperarmos el diccionario Apellido
+
+        String ape = DiccionarioApellido.getStringExtra(inicio.DATOS_apellido); // Assignamos el valor del apellido
+
+        TextView elApellido = (TextView) findViewById(R.id.getApellido); // buscamos el view donde introducioremos los datos
+
+        elApellido.setText(ape); //  asignamos el valor al view
 
 
 
