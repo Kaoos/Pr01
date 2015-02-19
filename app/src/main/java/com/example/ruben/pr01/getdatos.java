@@ -1,9 +1,11 @@
 package com.example.ruben.pr01;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class getdatos extends ActionBarActivity {
@@ -11,7 +13,20 @@ public class getdatos extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_getdatos);
+
+
+        Intent Diccionario = getIntent();//recuperarmos el diccionario
+
+        String nom = Diccionario.getStringExtra(inicio.DATOS); //
+
+        setContentView(R.layout.activity_getdatos);// creamos la view
+
+        TextView elNombre = (TextView) findViewById(R.id.getNombre); // buscamos el view donde introducioremos los datos
+
+        elNombre.setText(nom); //  asignamos el valor al view
+
+
+
     }
 
 
