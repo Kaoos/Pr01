@@ -20,6 +20,8 @@ public class inicio extends ActionBarActivity {
     public String Sexo;
     final public static String DATOS_sex = "com.example.ruben.pr01.DicSex";
 
+    final public static String DATOS_fecha = "com.example.ruben.pr01.DicFecha";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,33 +78,42 @@ public class inicio extends ActionBarActivity {
 
     public void SendValues (View myText){
 
-        Intent newView = new Intent(this, getdatos.class); //preparamos la view que queremos lanzar
-
-        //recivimos los datos
-
-        //nombre
-
-        EditText NombreUsiario = (EditText) findViewById(R.id.formNombre);
-        String myName = NombreUsiario.getText().toString(); // Nom tenemos lo que ha introducido el usuario en el campo txtNombre
-        newView.putExtra(DATOS_nombre,myName ); //añadimos el valor de la variable al diccionario
-
-        //apellido
-
-        EditText ApellidoUsiario = (EditText) findViewById(R.id.formApellido);
-        String myApe = ApellidoUsiario.getText().toString(); // Ape tenemos lo que ha introducido el usuario en el campo txtApellido
-        newView.putExtra(DATOS_apellido,myApe ); ////añadimos el valor de la variable al diccionario
-
-        //Sex
-
-        newView.putExtra(DATOS_sex,Sexo );
 
 
 
+            Intent newView = new Intent(this, getdatos.class); //preparamos la view que queremos lanzar
+
+            //recivimos los datos
+
+            //nombre
+
+            EditText NombreUsiario = (EditText) findViewById(R.id.formNombre);
+            String myName = NombreUsiario.getText().toString(); // Nom tenemos lo que ha introducido el usuario en el campo txtNombre
+            newView.putExtra(DATOS_nombre, myName); //añadimos el valor de la variable al diccionario
+
+            //apellido
+
+            EditText ApellidoUsiario = (EditText) findViewById(R.id.formApellido);
+            String myApe = ApellidoUsiario.getText().toString(); // Ape tenemos lo que ha introducido el usuario en el campo txtApellido
+            newView.putExtra(DATOS_apellido, myApe); ////añadimos el valor de la variable al diccionario
+
+            //Sex
+
+            newView.putExtra(DATOS_sex, Sexo);
+
+
+            //Fecha
+            EditText FechaUsiario = (EditText) findViewById(R.id.Cumple);
+            String myFecha = FechaUsiario.getText().toString(); // Ape tenemos lo que ha introducido el usuario en el campo txtApellido
+            newView.putExtra(DATOS_fecha, myFecha); ////añadimos el valor de la variable al diccionario
 
 
 
 
-        startActivity(newView); //abrimos la nueva view, mirar mainactivity2.java funcion onCreate
+            startActivity(newView); //abrimos la nueva view, mirar mainactivity2.java funcion onCreate
+
+
+
 
     }
 

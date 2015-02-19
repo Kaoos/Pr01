@@ -45,6 +45,15 @@ public class getdatos extends ActionBarActivity {
 
         elSexo.setText(sex); //  asignamos el valor al view
 
+        // ----- Fecha -----
+        Intent DiccionarioFecha = getIntent();//recuperarmos el diccionario Apellido
+
+        String date = DiccionarioFecha.getStringExtra(inicio.DATOS_fecha); // Assignamos el valor del apellido
+
+        TextView laFecha = (TextView) findViewById(R.id.getFecha); // buscamos el view donde introducioremos los datos
+
+        laFecha.setText(date); //  asignamos el valor al view
+
 
 
     }
