@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
+
 
 
 public class inicio extends ActionBarActivity {
@@ -14,6 +16,9 @@ public class inicio extends ActionBarActivity {
     final public static String DATOS_nombre = "com.example.ruben.pr01.DicNombre"; // es bueno definir el nombre de la variable para poder diferenciara entre otras app
     //DEFINIMOS la key para la entrada en mi diccionario, con el final hacemos que el valor no se pueda modificar en ningun sitio y es publica para todos
     final public static String DATOS_apellido = "com.example.ruben.pr01.DicApellido";
+
+    public String Sexo;
+    final public static String DATOS_sex = "com.example.ruben.pr01.DicSex";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +49,29 @@ public class inicio extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+//Miramos que radio buton esta seleccionado
+    public void onRadioButtonClicked(View view) {
+
+
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.fomrSexo01:
+
+                    Sexo = "Hombre";
+
+                    break;
+            case R.id.fomrSexo02:
+
+                    Sexo = "Mujer";
+
+                    break;
+        }
+    }
+
+
 //iniciamos la funcion del boton
 
     public void SendValues (View myText){
@@ -63,6 +91,10 @@ public class inicio extends ActionBarActivity {
         EditText ApellidoUsiario = (EditText) findViewById(R.id.formApellido);
         String myApe = ApellidoUsiario.getText().toString(); // Ape tenemos lo que ha introducido el usuario en el campo txtApellido
         newView.putExtra(DATOS_apellido,myApe ); ////añadimos el valor de la variable al diccionario
+
+        //Sex
+
+        newView.putExtra(DATOS_sex,Sexo );
 
 
 

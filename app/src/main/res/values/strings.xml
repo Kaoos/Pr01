@@ -26,5 +26,7 @@
     <!-- Get -->
     <string name="txtGetNombre">Te llamas</string>
     <string name="txtGetApellido">tus apellidos son</string>
+    <string name="txtGetSexo">eres</string>
+
 
 </resources>

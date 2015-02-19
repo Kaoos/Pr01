@@ -52,11 +52,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fomrSexo01"
+            android:onClick="onRadioButtonClicked"
           />
         <RadioButton android:id="@+id/fomrSexo02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fomrSexo02"
+            android:onClick="onRadioButtonClicked"
             />
 
     </RadioGroup>
