@@ -37,22 +37,63 @@ public class getdatos extends ActionBarActivity {
 
 
         // ----- Sexo -----
-        Intent DiccionarioSexo = getIntent();//recuperarmos el diccionario Apellido
+        Intent DiccionarioSexo = getIntent();
 
-        String sex = DiccionarioSexo.getStringExtra(inicio.DATOS_sex); // Assignamos el valor del apellido
+        String sex = DiccionarioSexo.getStringExtra(inicio.DATOS_sex);
 
-        TextView elSexo = (TextView) findViewById(R.id.getSexo); // buscamos el view donde introducioremos los datos
+        TextView elSexo = (TextView) findViewById(R.id.getSexo);
 
         elSexo.setText(sex); //  asignamos el valor al view
 
         // ----- Fecha -----
-        Intent DiccionarioFecha = getIntent();//recuperarmos el diccionario Apellido
+        Intent DiccionarioFecha = getIntent();
 
-        String date = DiccionarioFecha.getStringExtra(inicio.DATOS_fecha); // Assignamos el valor del apellido
+        String date = DiccionarioFecha.getStringExtra(inicio.DATOS_fecha);
 
-        TextView laFecha = (TextView) findViewById(R.id.getFecha); // buscamos el view donde introducioremos los datos
+        TextView laFecha = (TextView) findViewById(R.id.getFecha);
 
         laFecha.setText(date); //  asignamos el valor al view
+
+
+        // ----- trabajo & estudios -----
+        Intent DiccionarioTrabajo = getIntent();
+        Intent DiccionarioEstudis = getIntent();
+
+
+        Boolean trabajo = getIntent().getExtras().getBoolean("siTrabaja");
+        Boolean estudios = getIntent().getExtras().getBoolean("siEstudia");
+
+        TextView trabEstu = (TextView) findViewById(R.id.getTrabEstu);
+
+        if (trabajo == true && estudios == true){
+
+            trabEstu.setText("Actualmente estoy trabajano y estudiando"); //  asignamos el valor al view
+
+
+
+        }else{
+
+            if (trabajo == true && estudios == false){
+
+                trabEstu.setText("Actualmente estoy trabajano"); //  asignamos el valor al view
+
+            }else{
+                if (trabajo == false && estudios == true){
+
+                    trabEstu.setText("Actualmente estoy estudiando"); //  asignamos el valor al view
+
+                }else{
+
+
+                    trabEstu.setText("Actualmente no estoy haciendo nada"); //  asignamos el valor al view
+                }
+
+
+            }
+
+
+
+        }
 
 
 

@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/formApellido"/>
 
-<!-- sex0 -->
+<!-- sex -->
 
     <TextView
         android:layout_width="match_parent"

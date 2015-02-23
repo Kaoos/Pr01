@@ -57,7 +57,7 @@
         android:id="@+id/getSexo"
         />
 
-    <!-- Sexo -->
+    <!-- Fecha -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,6 +72,20 @@
         android:text="Small Text"
         android:id="@+id/getFecha"
         />
+
+    <!-- Trabajo & estudios -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/getTrabEstu"
+        />
+
+
+
 
 
 
