@@ -56,9 +56,6 @@ public class getdatos extends ActionBarActivity {
 
 
         // ----- trabajo & estudios -----
-        Intent DiccionarioTrabajo = getIntent();
-        Intent DiccionarioEstudis = getIntent();
-
 
         Boolean trabajo = getIntent().getExtras().getBoolean("siTrabaja");
         Boolean estudios = getIntent().getExtras().getBoolean("siEstudia");
@@ -67,7 +64,7 @@ public class getdatos extends ActionBarActivity {
 
         if (trabajo == true && estudios == true){
 
-            trabEstu.setText("Actualmente estoy trabajano y estudiando"); //  asignamos el valor al view
+            trabEstu.setText("Actualmente estas trabajano y estudiando"); //  asignamos el valor al view
 
 
 
@@ -75,17 +72,17 @@ public class getdatos extends ActionBarActivity {
 
             if (trabajo == true && estudios == false){
 
-                trabEstu.setText("Actualmente estoy trabajano"); //  asignamos el valor al view
+                trabEstu.setText("Actualmente estas trabajano");
 
             }else{
                 if (trabajo == false && estudios == true){
 
-                    trabEstu.setText("Actualmente estoy estudiando"); //  asignamos el valor al view
+                    trabEstu.setText("Actualmente estas estudiando");
 
                 }else{
 
 
-                    trabEstu.setText("Actualmente no estoy haciendo nada"); //  asignamos el valor al view
+                    trabEstu.setText("Actualmente no estas haciendo nada");
                 }
 
 
@@ -95,6 +92,18 @@ public class getdatos extends ActionBarActivity {
 
         }
 
+        // ----- peso -----
+
+
+
+        Intent DiccionarioPeso = getIntent();
+
+        String peso = DiccionarioPeso.getStringExtra(inicio.DATOS_peso);
+
+
+        TextView elPeso = (TextView) findViewById(R.id.getPeso);
+
+        elPeso.setText(peso + " kg"); //  asignamos el valor al view
 
 
     }

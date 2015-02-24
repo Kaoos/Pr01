@@ -1,18 +1,19 @@
 package com.example.ruben.pr01;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.CheckBox;
+import android.widget.SeekBar;
 
 
-import android.app.AlertDialog;
-;
+
 
 
 public class inicio extends ActionBarActivity {
@@ -26,6 +27,15 @@ public class inicio extends ActionBarActivity {
 
     final public static String DATOS_fecha = "com.example.ruben.pr01.DicFecha";
 
+    final public static String DATOS_peso = "com.example.ruben.pr01.DicPeso";
+
+    // skeeBar
+    public  SeekBar seekBar;
+    public int peso;
+
+
+
+
 
 
 
@@ -33,6 +43,10 @@ public class inicio extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
+
+
+
+
     }
 
 
@@ -79,6 +93,7 @@ public class inicio extends ActionBarActivity {
                     break;
         }
     }
+
 
 
 //iniciamos la funcion del boton
@@ -130,7 +145,19 @@ public class inicio extends ActionBarActivity {
                 newView.putExtra("siEstudia", true);
 
 
+
+
+
             }
+
+
+
+
+
+
+
+
+
 
 
             startActivity(newView); //abrimos la nueva view, mirar mainactivity2.java funcion onCreate
