@@ -10,6 +10,10 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
+
+import android.widget.TextView;
 
 
 
@@ -26,8 +30,10 @@ public class inicio extends ActionBarActivity {
 
     final public static String DATOS_fecha = "com.example.ruben.pr01.DicFecha";
 
-    final public static String DATOS_peso = "com.example.ruben.pr01.DicPeso";
+    //final public static String DATOS_peso = "com.example.ruben.pr01.DicPeso";
 
+
+    TextView elseekPeso ;
 
 
 
@@ -40,6 +46,36 @@ public class inicio extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
 
+
+        SeekBar seekBar;
+
+        seekBar = (SeekBar) findViewById(R.id.skeePeso);
+
+        elseekPeso = (TextView) findViewById(R.id.ShowPeso);
+
+        seekBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+
+
+            @Override
+
+            public void onProgressChanged(SeekBar seekBar, int progresValue, boolean fromUser) {
+
+                elseekPeso.setText("" + progresValue); //  asignamos el valor al view
+
+            }
+            @Override
+
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+
+        });
 
 
 

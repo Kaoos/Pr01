@@ -17,7 +17,8 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/txtNombre"
-        android:text="@string/txtNombre"/>
+        android:text="@string/txtNombre"
+        style="@style/Miniestilo"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -44,6 +45,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/tituloSexo"
         android:text="@string/tituloSexo" />
+
+
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
@@ -116,12 +119,12 @@
         android:id="@+id/tituloPeso"
         android:text="@string/tituloPeso" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView"
-        android:layout_gravity="right" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ShowPeso"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
     <SeekBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

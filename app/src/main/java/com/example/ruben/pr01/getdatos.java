@@ -96,14 +96,14 @@ public class getdatos extends ActionBarActivity {
 
 
 
-        Intent DiccionarioPeso = getIntent();
+      //  Intent DiccionarioPeso = getIntent();
 
-        String peso = DiccionarioPeso.getStringExtra(inicio.DATOS_peso);
+        //String peso = DiccionarioPeso.getStringExtra(inicio.DATOS_peso);
 
 
-        TextView elPeso = (TextView) findViewById(R.id.getPeso);
+        //TextView elPeso = (TextView) findViewById(R.id.getPeso);
 
-        elPeso.setText(peso + " kg"); //  asignamos el valor al view
+        //elPeso.setText(peso + " kg"); //  asignamos el valor al view
 
 
     }
