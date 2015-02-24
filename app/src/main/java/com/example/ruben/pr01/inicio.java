@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.SeekBar;
 
 
 
@@ -29,9 +28,6 @@ public class inicio extends ActionBarActivity {
 
     final public static String DATOS_peso = "com.example.ruben.pr01.DicPeso";
 
-    // skeeBar
-    public  SeekBar seekBar;
-    public int peso;
 
 
 
@@ -64,15 +60,24 @@ public class inicio extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+            switch(item.getItemId()) {
+                case R.id.action_settings:
+
+                    return true;
+
+                case R.id.action_send:
+
+                    SendValues(findViewById(id));
+
+            }
+
 
         return super.onOptionsItemSelected(item);
     }
 
-//Miramos que radio buton esta seleccionado
+
+
+    //Miramos que radio buton esta seleccionado
     public void onRadioButtonClicked(View view) {
 
 
