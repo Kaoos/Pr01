@@ -144,10 +144,6 @@ public class inicio extends ActionBarActivity {
 
                 newView.putExtra("siEstudia", true);
 
-
-
-
-
             }
 
 

@@ -92,13 +92,19 @@
     <CheckBox android:id="@+id/checkEstudio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/checkEstudio" />
-
+        android:text="@string/checkEstudio"
+        android:/>
 
     <CheckBox android:id="@+id/checkTrabajo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/checkTrabajo" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloswitchUni"
+        android:id="@+id/switchUni" />
 
 
     <!-- peso -->
